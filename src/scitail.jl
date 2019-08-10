@@ -1,7 +1,10 @@
 """
     SciTail
 
+SciTail is a NLI dataset created from multiple-choice science exams and web sentences.
 
+For details, see the [2018 paper](http://ai2-website.s3.amazonaws.com/publications/scitail-aaai-2018_cameraready.pdf) "SciTail: A Textual Entailment Dataset from Science Question Answering"
+by Tushar Khot, Asish Sabharwal, and Peter Clark.
 """
 struct SciTail <: NLIDataset end
 

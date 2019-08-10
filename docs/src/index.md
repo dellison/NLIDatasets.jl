@@ -16,7 +16,7 @@ MultiNLI
 
 ## XNLI
 ```@docs 
-xNLI
+XNLI
 ```
 
 ## HANS

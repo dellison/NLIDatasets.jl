@@ -2,6 +2,8 @@
     XNLI
 
 A collection of 5,000 test and 2,500 dev pairs for the `MultiNLI` corpus.
+
+For details, see the (2018 paper)[https://www.aclweb.org/anthology/papers/D/D18/D18-1269/] "XNLI: Evaluating Cross-lingual Sentence Representations."
 """
 struct XNLI <: NLIDataset end
 
