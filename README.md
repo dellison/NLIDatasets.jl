@@ -12,3 +12,4 @@ NLI Datasets:
 - [XNLI](https://www.nyu.edu/projects/bowman/xnli/) (see [paper](https://www.aclweb.org/anthology/papers/D/D18/D18-1269/))
 - [SciTail](http://data.allenai.org/scitail/) (see [paper](http://ai2-website.s3.amazonaws.com/publications/scitail-aaai-2018_cameraready.pdf))
 - [HANS](https://github.com/tommccoy1/hans) (see [paper](https://www.aclweb.org/anthology/P19-1334))
+- [BreakingNLI](https://github.com/BIU-NLP/Breaking_NLI) (see [paper](https://www.aclweb.org/anthology/P18-2103/))

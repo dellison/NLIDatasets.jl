@@ -39,4 +39,8 @@ using NLIDatasets, Test
     @testset "HANS" begin
         @test isfile(test_tsv(HANS))
     end
+
+    @testset "Breaking_NLI" begin
+        @test isfile(test_jsonl(BreakingNLI))
+    end
 end
