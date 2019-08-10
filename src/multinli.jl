@@ -1,7 +1,10 @@
 """
     MultiNLI
 
+A corpus of 433k sentence pairs for NLI.
 
+For details, see the [MultiNLI home page](https://www.nyu.edu/projects/bowman/multinli/)
+or read the [2018 paper](https://www.nyu.edu/projects/bowman/multinli/paper.pdf) "A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference" by Adina Williams, NIkita Nangia, and Samuel R. Bowman.
 """
 struct MultiNLI <: NLIDataset end
 
@@ -22,6 +25,8 @@ function register_MultiNLI()
                      with textual entailment information.
 
                      https://www.nyu.edu/projects/bowman/multinli/
+
+                     The dataset is distributed as a 227MB zip file.
 
                      For license details, see details the data description paper:
                      https://www.nyu.edu/projects/bowman/multinli/paper.pdf

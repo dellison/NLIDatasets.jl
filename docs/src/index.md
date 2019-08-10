@@ -5,13 +5,21 @@ NLIDatasets.jl is a Julia package for working with datasets for the Natural Lang
 Provides an interface to the following datasets:
 
 ## SNLI
-`@docs SNLI`
+```@docs
+SNLI
+```
 
 ## MultiNLI
-`@docs MultiNLI`
+```@docs
+MultiNLI
+```
 
 ## XNLI
-`@docs xNLI`
+```@docs 
+xNLI
+```
 
 ## HANS
-`@docs HANS`
+```@docs
+HANS
+```

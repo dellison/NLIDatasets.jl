@@ -7,8 +7,8 @@ SNLI sentence pairs are manually labeled with labels entailment, contradiction,
 and neutral.
 
 For details, see the [SNLI home page](https://nlp.stanford.edu/projects/snli/)
-or read the (2015 paper)[A large annotated corpus for learning natural language inference] by
-Samuel R. Bowman, Gabor Angeli, Christopher Potts, and Christopher Manning.
+or read the [2015 paper](https://nlp.stanford.edu/pubs/snli_paper.pdf) "A large annotated corpus for learning natural language inference"
+by Samuel R. Bowman, Gabor Angeli, Christopher Potts, and Christopher Manning.
 """
 struct SNLI <: NLIDataset end
 
