@@ -9,8 +9,6 @@ using DataDeps
 using DataDeps: @datadep_str
 using HTTP
 
-"""
-"""
 abstract type NLIDataset end
 
 include("snli.jl")
@@ -28,7 +26,5 @@ function __init__()
     register_SciTail()
     register_HANS()
 end
-
-
 
 end # module
