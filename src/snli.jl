@@ -2,26 +2,6 @@
 """
 struct SNLI <: NLIDataset end
 
-"""
-"""
-struct SNLIExample
-    gold_label
-    sentence1_binary_parse
-    sentence2_binary_parse
-    sentence1_parse
-    sentence2_parse
-    sentence1
-    sentence2
-    captionID
-    pairID
-    label1
-    label2
-    label3
-    label4
-    label5
-end
-SNLIExample(str::String) = SNLIExample(String.(split(line, "\t"))...)
-
 snlifile(filename) = joinpath(datadep"SNLI", "snli_1.0", filename)
 
 train_tsv(::SNLI)   = snlifile("snli_1.0_train.txt")

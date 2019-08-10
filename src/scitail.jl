@@ -2,8 +2,6 @@
 """
 struct SciTail <: NLIDataset end
 
-# xnlifile(filename) = joinpath(datadep"XNLI", "XNLI-1.0", filename)
-
 scitail_base() = joinpath(datadep"SciTailV1.1", "SciTailV1.1")
 scitail_jsonl(filename) = joinpath(scitail_base(), "snli_format", filename)
 scitail_tsv(filename)   = joinpath(scitail_base(), "tsv_format", filename)
