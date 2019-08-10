@@ -1,4 +1,7 @@
 """
+    SciTail
+
+
 """
 struct SciTail <: NLIDataset end
 
@@ -16,6 +19,10 @@ test_jsonl(::SciTail)  = scitail_jsonl("scitail_1.0_test.txt")
 function register_SciTail()
     register(DataDep("SciTailV1.1",
                      """
+                     The SciTail dataset is an entailment dataset created from multiple-choice science exams and web sentences.
+
+                     See:
+                     http://data.allenai.org/scitail/
                      """,
                      "http://data.allenai.org.s3.amazonaws.com/downloads/SciTailV1.1.zip",
                      "3fccd37350a94ca280b75998568df85fc2fc62843a3198d644fcbf858e6943d5",

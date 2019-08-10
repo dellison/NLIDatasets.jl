@@ -1,4 +1,7 @@
 """
+    MultiNLI
+
+
 """
 struct MultiNLI <: NLIDataset end
 
@@ -14,6 +17,14 @@ dev_mismatched_jsonl(::MultiNLI) = multinlifile("multinli_1.0_dev_mismatched.jso
 function register_MultiNLI()
     register(DataDep("MultiNLI",
                      """
+                     The Multi-Genre Natural Language Inference (MultiNLI) corpus
+                     is a crowd-sourced collection of 433k sentence pairs annotated
+                     with textual entailment information.
+
+                     https://www.nyu.edu/projects/bowman/multinli/
+
+                     For license details, see details the data description paper:
+                     https://www.nyu.edu/projects/bowman/multinli/paper.pdf
                      """,
                      "https://www.nyu.edu/projects/bowman/multinli/multinli_1.0.zip",
                      "049f507b9e36b1fcb756cfd5aeb3b7a0cfcb84bf023793652987f7e7e0957822",
