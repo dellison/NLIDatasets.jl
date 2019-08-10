@@ -21,10 +21,10 @@ using NLIDatasets, Test
     end
 
     @testset "XNLI" begin
-        @test isfile(dev_tsv(SNLI))
-        @test isfile(dev_jsonl(SNLI))
-        @test isfile(test_tsv(SNLI))
-        @test isfile(test_jsonl(SNLI))
+        @test isfile(dev_tsv(XNLI))
+        @test isfile(dev_jsonl(XNLI))
+        @test isfile(test_tsv(XNLI))
+        @test isfile(test_jsonl(XNLI))
     end
 
     @testset "SciTail" begin
