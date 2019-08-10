@@ -37,6 +37,6 @@ using NLIDatasets, Test
     end
 
     @testset "HANS" begin
-        @test isfile(train_tsv(HANS))
+        @test isfile(test_tsv(HANS))
     end
 end
