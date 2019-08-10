@@ -36,4 +36,7 @@ using NLIDatasets, Test
         @test isfile(test_jsonl(SciTail))
     end
 
+    @testset "HANS" begin
+        @test isfile(train_tsv(HANS))
+    end
 end
