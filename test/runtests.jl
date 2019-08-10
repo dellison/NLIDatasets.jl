@@ -26,5 +26,14 @@ using NLIDatasets, Test
         @test isfile(test_tsv(SNLI))
         @test isfile(test_jsonl(SNLI))
     end
-    
+
+    @testset "SciTail" begin
+        @test isfile(train_tsv(SciTail))
+        @test isfile(train_jsonl(SciTail))
+        @test isfile(dev_tsv(SciTail))
+        @test isfile(dev_jsonl(SciTail))
+        @test isfile(test_tsv(SciTail))
+        @test isfile(test_jsonl(SciTail))
+    end
+
 end
