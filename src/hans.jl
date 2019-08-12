@@ -3,7 +3,12 @@
 
 HANS (Heauristic Analysis for NLI Systems) is a dataset for NLI.
 
-For details, see the [2019 paper](https://www.aclweb.org/anthology/P19-1334) "Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"
+It contains the set of examples used in the 2019 paper "Right for the
+Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language
+Inference" by R. Tom McCoy, Ellie Pavlick, and Tal Linzen.
+
+For details, see the [2019 paper](https://www.aclweb.org/anthology/P19-1334) "Right for the Wrong Reasons:
+Diagnosing Syntactic Heuristics in Natural Language Inference"
 by by R. Tom McCoy, Ellie Pavlick, and Tal Linzen.
 
 Consists of a set of examples for evaluation, provided with `test_tsv`.

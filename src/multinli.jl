@@ -21,14 +21,14 @@ module MultiNLI
 import ...register_data
 using DataDeps: @datadep_str
 
-multinlifile(filename) = joinpath(datadep"MultiNLI", "multinli_1.0", filename)
+multinli_file(filename) = joinpath(datadep"MultiNLI", "multinli_1.0", filename)
 
-train_tsv()            = multinlifile("multinli_1.0_train.txt")
-train_jsonl()          = multinlifile("multinli_1.0_train.jsonl")
-dev_matched_tsv()      = multinlifile("multinli_1.0_dev_matched.txt")
-dev_matched_jsonl()    = multinlifile("multinli_1.0_dev_matched.jsonl")
-dev_mismatched_tsv()   = multinlifile("multinli_1.0_dev_mismatched.txt")
-dev_mismatched_jsonl() = multinlifile("multinli_1.0_dev_mismatched.jsonl")
+train_tsv()            = multinli_file("multinli_1.0_train.txt")
+train_jsonl()          = multinli_file("multinli_1.0_train.jsonl")
+dev_matched_tsv()      = multinli_file("multinli_1.0_dev_matched.txt")
+dev_matched_jsonl()    = multinli_file("multinli_1.0_dev_matched.jsonl")
+dev_mismatched_tsv()   = multinli_file("multinli_1.0_dev_mismatched.txt")
+dev_mismatched_jsonl() = multinli_file("multinli_1.0_dev_mismatched.jsonl")
 
 function __init__()
     register_data(
