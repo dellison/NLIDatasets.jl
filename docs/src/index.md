@@ -6,25 +6,25 @@ Provides an interface to the following datasets:
 
 ## SNLI
 ```@docs
-SNLI
+NLIDatasets.SNLI
 ```
 
 ## MultiNLI
 ```@docs
-MultiNLI
+NLIDatasets.MultiNLI
 ```
 
 ## XNLI
 ```@docs 
-XNLI
+NLIDatasets.XNLI
 ```
 
 ## HANS
 ```@docs
-HANS
+NLIDatasets.HANS
 ```
 
 ## BreakingNLI
 ```@docs
-BreakingNLI
+NLIDatasets.BreakingNLI
 ```
