@@ -2,14 +2,17 @@ module NLIDatasets
 
 export SNLI, MultiNLI, XNLI, SciTail, HANS, BreakingNLI
 
-export train_tsv, train_jsonl, dev_tsv, dev_jsonl, test_tsv, test_jsonl,
-    dev_matched_tsv, dev_matched_jsonl, dev_mismatched_tsv, dev_mismatched_jsonl
+using DataDeps, HTTP
 
-using DataDeps
-using DataDeps: @datadep_str
-using HTTP
+function downloadzip(url, file)
+    headers = ["User-Agent" => "NLIDatasets.jl",
+               "Accept" => "*/*",
+               "Accept-Encoding" => "gzip, deflate, br"]
+    HTTP.download(url, file, headers)
+end
 
-abstract type NLIDataset end
+register_data(name, description, url, sha; fetch_method = downloadzip, post_fetch_method = unpack) =
+    DataDeps.register(DataDep(name, description, url, sha; fetch_method = fetch_method, post_fetch_method = post_fetch_method))
 
 include("snli.jl")
 include("multinli.jl")
@@ -18,15 +21,6 @@ include("scitail.jl")
 include("hans.jl")
 include("breaking_nli.jl")
 
-include("util.jl")
-
-function __init__()
-    register_SNLI()
-    register_MultiNLI()
-    register_XNLI()
-    register_SciTail()
-    register_HANS()
-    register_BreakingNLI()
-end
+using .SNLI, .MultiNLI, .XNLI, .SciTail, .HANS, .BreakingNLI
 
 end # module
