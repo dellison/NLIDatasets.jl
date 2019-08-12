@@ -18,7 +18,6 @@ SNLI.dev_tsv()
 SNLI.dev_jsonl()
 SNLI.test_tsv()
 SNLI.test_jsonl()
-end
 ```
 """
 module SNLI
