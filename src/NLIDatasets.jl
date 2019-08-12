@@ -1,7 +1,5 @@
 module NLIDatasets
 
-export SNLI, MultiNLI, XNLI, SciTail, HANS, BreakingNLI
-
 using DataDeps, HTTP
 
 function downloadzip(url, file)
