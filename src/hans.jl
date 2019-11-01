@@ -22,7 +22,8 @@ module HANS
 import ...register_data
 using DataDeps: @datadep_str
 
-hansfile(filename) = joinpath(datadep"HANS", "hans-0e52769572ab97da1b919baf222f355bdf481d88", filename)
+hansfile(filename) =
+    joinpath(datadep"HANS", "hans-0e52769572ab97da1b919baf222f355bdf481d88", filename)
 
 test_tsv() = hansfile("heuristics_evaluation_set.txt")
                               

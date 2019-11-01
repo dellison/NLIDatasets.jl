@@ -45,12 +45,13 @@ function __init__()
         """,
         "https://github.com/BIU-NLP/Breaking_NLI/archive/8a7658c1ce6b732f4e8af3b06560f1a13b8b18b0.zip",
         "0ccf9e308245036dec52e369316b94326ef06c96729b336d0269974b0814581e",
-        post_fetch_method = function (zip)
+        postfetch = function (zip)
             unpack(zip)
             unpack(joinpath(datadep"Breaking_NLI",
                             "Breaking_NLI-8a7658c1ce6b732f4e8af3b06560f1a13b8b18b0",
                             "breaking_nli_dataset.zip"))
-        end)
+        end
+    )
 end
 
 end # module
