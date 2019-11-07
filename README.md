@@ -14,6 +14,7 @@ NLIDatasets.jl is a Julia package for working with Natural Language Inference da
 - [SciTail](http://data.allenai.org/scitail/) (see [paper](http://ai2-website.s3.amazonaws.com/publications/scitail-aaai-2018_cameraready.pdf))
 - [HANS](https://github.com/tommccoy1/hans) (see [paper](https://www.aclweb.org/anthology/P19-1334))
 - [BreakingNLI](https://github.com/BIU-NLP/Breaking_NLI) (see [paper](https://www.aclweb.org/anthology/P18-2103/))
+- [ANLI](https://github.com/facebookresearch/anli) (see [paper](https://arxiv.org/abs/1910.14599))
 
 ## Usage
 

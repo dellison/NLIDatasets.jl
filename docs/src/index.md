@@ -10,6 +10,7 @@ Provides an interface to the following datasets:
 - [HANS](@ref HANS)
 - [BreakingNLI](@ref BreakingNLI)
 - [SciTail](@ref SciTail)
+- [ANLI](@ref ANLI)
 
 ## SNLI
 ```@docs
@@ -39,4 +40,9 @@ NLIDatasets.BreakingNLI
 ## SciTail
 ```@docs
 NLIDatasets.SciTail
+```
+
+## ANLI
+```@docs
+NLIDatasets.ANLI
 ```

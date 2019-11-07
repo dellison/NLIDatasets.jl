@@ -49,4 +49,17 @@ using NLIDatasets, Test
         using NLIDatasets: BreakingNLI
         @test isfile(BreakingNLI.test_jsonl())
     end
+
+    @testset "ANLI" begin
+        using NLIDatasets: ANLI
+        @test isfile(ANLI.R1_train_jsonl())
+        @test isfile(ANLI.R1_dev_jsonl())
+        @test isfile(ANLI.R1_test_jsonl())
+        @test isfile(ANLI.R2_train_jsonl())
+        @test isfile(ANLI.R2_dev_jsonl())
+        @test isfile(ANLI.R2_test_jsonl())
+        @test isfile(ANLI.R3_train_jsonl())
+        @test isfile(ANLI.R3_dev_jsonl())
+        @test isfile(ANLI.R3_test_jsonl())
+    end
 end

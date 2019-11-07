@@ -21,7 +21,8 @@ include("xnli.jl")
 include("scitail.jl")
 include("hans.jl")
 include("breaking_nli.jl")
+include("anli.jl")
 
-using .SNLI, .MultiNLI, .XNLI, .SciTail, .HANS, .BreakingNLI
+using .SNLI, .MultiNLI, .XNLI, .SciTail, .HANS, .BreakingNLI, .ANLI
 
 end # module
